@@ -6,3 +6,4 @@ lib/
 share/
 pip-selfcheck.json
 *.sass-cache*
+*.pyc
