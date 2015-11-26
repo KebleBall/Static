@@ -1,0 +1,187 @@
+@import "scss/normalize";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import "scss/headline_one";
+
+$body_bg: #e7e2d4;
+$banner_bg: #640325;
+$tickets_social_text: $banner_bg;
+$tabs_bg: #950219;
+$tabs_text: #f3ede1;
+$content_bg: #f6f2ed;
+$content_text: #000;
+$content_headers: #950218;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $body_bg;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    border: 0;
+    color: inherit;
+}
+
+#main {
+    width: 960px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 1rem 210px;
+    background-color: #f6f2ed;
+    position: relative;
+}
+
+#wall_overlay {
+    width: 960px;
+    height: 204px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -480px;
+    background-image: url('images/bottom_overlay.png');
+}
+
+#tickets_social {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            line-height: 2.5rem;
+            margin-right: 1rem;
+            a {
+                color: $tickets_social_text;
+                &:hover {
+                    color: #950219;
+                }
+            }
+        }
+    }
+}
+
+#tickets_link {
+    position: relative;
+    font-size: 2rem;
+    #tickets_message {
+        background-color: $body_bg;
+        border: 2px solid $tabs_bg;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        width: 12rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        display: none;
+    }
+    &:hover #tickets_message {
+        display: block;
+    }
+}
+
+.social_icon {
+    font-size: 2rem;
+    .fa {
+        line-height: 2.5rem;
+    }
+}
+
+.headline, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Headline One', sans-serif;
+    text-transform: uppercase;
+    vertical-align: -3%;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $content_headers;
+}
+
+#logo {
+    background-color: #640325;
+    margin: 0 -3rem;
+    padding: 1rem 0;
+    a {
+        display: block;
+        text-align: center;
+    }
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            a {
+                display: block;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                padding: 0 0.5rem;
+                margin: 0 0.5rem;
+                background-color: $tabs_bg;
+                color: $tabs_text;
+                &:hover {
+                    background-color: $tabs_text;
+                    color: $tabs_bg;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 120px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    margin-left: -1rem;
+    a {
+        font-weight: bold;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+#committee_table {
+    margin: 0 auto;
+    td {
+        padding: 0.2rem;
+        &.role_title {
+            text-align: right;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    }
+}
+
+div#posters {
+    height: 341px;
+    background-image: url('images/posters.png');
+    background-position-x: -50px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 250px;
+}

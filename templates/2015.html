@@ -1,0 +1,13 @@
+<!-- home.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+<article id="home">
+    <h1>Keble Ball 2015</h1>
+    <p><img src="{{ url_for('static', filename='images/2015_1.jpg') }}" /></p>
+    <p><img src="{{ url_for('static', filename='images/2015_2.jpg') }}" /></p>
+    <p><img src="{{ url_for('static', filename='images/2015_3.jpg') }}" /></p>
+    <p><img src="{{ url_for('static', filename='images/2015_4.jpg') }}" /></p>
+    <p><img src="{{ url_for('static', filename='images/2015_5.jpg') }}" /></p>
+</article>
+{% endblock %}
