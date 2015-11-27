@@ -6,4 +6,4 @@ SASS_PID=$!
 
 python main.py
 
-kill $FOO_PID
+kill $SASS_PID
