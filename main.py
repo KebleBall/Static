@@ -13,5 +13,9 @@ def show_page(name):
 def home():
     return flask.render_template("home.html")
 
+@APP.route("/error.html")
+def error():
+    return flask.render_template("error.html")
+
 if __name__ == "__main__":
     APP.run()
