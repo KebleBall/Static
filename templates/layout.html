@@ -38,13 +38,17 @@
     </head>
     <body>
         <div id="posters"></div>
+        <div id="neptune_logo_top_right">
+            <a href="http://www.neptunebigideas.com/?usertype=UK%20Private%20Investor&amp;cm_mmc=Consumer-_-keble%20-_-promotional-_-Bigideas" target="_blank">
+                <img src="{{ url_for('static', filename='images/neptune.png') }}" alt="Sponsored by Neptune investment Management" />
+            </a>
+        </div>
         <section id="main">
             <header>
                 <section id="tickets_social">
                     <ul>
                         <li id="tickets_link">
-                            <a href="#" class="headline">Tickets</a>
-                            <span id="tickets_message">The ticketing system isn't open yet. Check back soon!</span>
+                            <a href="/tickets/" class="headline">Tickets</a>
                         </li>
                         <li id="facebook_link" class="social_icon">
                             <a href="https://www.facebook.com/kebleball2016">
@@ -112,6 +116,10 @@
                 </section>
             </footer>
         </section>
-        <div id="wall_overlay"></div>
+        <div id="wall_overlay">
+            <a href="http://www.neptunebigideas.com/?usertype=UK%20Private%20Investor&amp;cm_mmc=Consumer-_-keble%20-_-promotional-_-Bigideas" target="_blank" id="neptunelogo_footer">
+                <img src="{{ url_for('static', filename='images/neptune_with_background_square.png') }}" alt="Sponsored by Neptune investment Management" />
+            </a>
+        </div>
     </body>
 </html>

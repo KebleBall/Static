@@ -29,12 +29,17 @@ body {
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    min-width: 884px;
 }
 
 a {
     text-decoration: none;
+    font-weight: bold;
     border: 0;
-    color: inherit;
+    color: #333;
+    &:hover {
+        color: #666;
+    }
 }
 
 #main {
@@ -54,6 +59,7 @@ a {
     background-image: url("images/bottom_overlay.png");
     background-position: bottom center;
     pointer-events: none;
+    min-width: 884px;
 }
 
 #tickets_social {
@@ -76,23 +82,7 @@ a {
 }
 
 #tickets_link {
-    position: relative;
     font-size: 2rem;
-    #tickets_message {
-        background-color: $body_bg;
-        border: 2px solid $tabs_bg;
-        position: absolute;
-        top: 2.5rem;
-        left: 0;
-        width: 12rem;
-        padding: 0.5rem;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        display: none;
-    }
-    &:hover #tickets_message {
-        display: block;
-    }
 }
 
 .social_icon {
@@ -208,6 +198,32 @@ div#posters {
 
 #neptunelogo {
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     display: block;
+}
+
+#neptunelogo_footer {
+    pointer-events: all;
+    img {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -410px;
+        width: 200px;
+    }
+    @media screen and (min-width:1365px) {
+        display: none;
+    }
+}
+
+#neptune_logo_top_right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    img {
+        width: 200px;
+    }
+    @media screen and (max-width:1364px) {
+        display: none;
+    }
 }
