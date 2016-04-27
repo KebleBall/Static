@@ -6,7 +6,7 @@
 #
 blessings==1.6            # via curtsies
 bpython==0.15
-click==6.0                # via pip-tools
+click==6.6                # via pip-tools
 curtsies==0.1.19          # via bpython
 first==2.0.1              # via pip-tools
 flask==0.10.1
