@@ -9,7 +9,7 @@ bpython==0.15
 click==6.6                # via pip-tools
 curtsies==0.2.6          # via bpython
 first==2.0.1              # via pip-tools
-flask==0.10.1
+flask==0.11
 frozen-flask==0.12
 greenlet==0.4.9           # via bpython
 itsdangerous==0.24        # via flask
